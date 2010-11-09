@@ -86,7 +86,7 @@ class WorldBank(object):
         '''Utility function that concatenates the URL and calls _fetch'''
         
         kwargs['format'] = 'json'
-        if not kwargs.get('per_page', False):
+        if 'per_page' not in kwargs:
             kwargs['per_page'] = self.per_page
         return _fetch(self.URL + self.lang + '/' + path + '?' + 
                       urllib.urlencode(kwargs))

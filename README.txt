@@ -5,7 +5,8 @@ Example code:
 
 from worldbank import Worldbank
 
-wb = Worldbank()	#"lang" and "per_page" are allowed kwargs. Represents a connection to World Bank
+wb = WorldBank()	#"lang" and "per_page" are allowed kwargs. 
+Represents a connection to World Bank
 brazil = wb.get_country(code='br')	#gets general data on brazil from world bank
 brazil_gdp = wb.get_country(code='br', indicator='NY.GDP.MKTP.CD')	#GDP of Brazil in US dollars
 indicators = wb.get_indicators()	#a list of all the indicators
