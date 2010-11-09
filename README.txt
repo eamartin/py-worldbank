@@ -3,7 +3,7 @@ The formal specification of the World Bank API can be found at http://data.world
 
 Example code:
 
-from worldbank import Worldbank
+from worldbank import WorldBank
 
 wb = WorldBank()	#"lang" and "per_page" are allowed kwargs. 
 Represents a connection to World Bank
